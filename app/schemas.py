@@ -60,6 +60,7 @@ class MenuItemBase(BaseModel):
         description="Porcentaje de descuento 0-100"
     )
     is_available: bool = True
+    image_url: Optional[str] = None
 
 
 class MenuItemCreate(MenuItemBase):
@@ -72,6 +73,7 @@ class MenuItemUpdate(BaseModel):
     description: Optional[str] = None
     price: Optional[Decimal] = None
     discount: Optional[Decimal] = None
+    image_url: Optional[str] = None
     is_available: Optional[bool] = None
     category_id: Optional[int] = None
 

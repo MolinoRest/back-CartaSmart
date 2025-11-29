@@ -39,6 +39,7 @@ class MenuItem(Base):
     description = Column(Text, nullable=True)
     price = Column(Numeric(10, 2), nullable=False)
     discount = Column(Numeric(5, 2), nullable=True)
+    image_url = Column(String(500), nullable=True)
 
     is_available = Column(Boolean, default=True)
 
